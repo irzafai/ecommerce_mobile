@@ -1,3 +1,4 @@
+import 'package:ecommerce_mobile/features/home/screen/main_screen/main_screen.dart';
 import 'package:ecommerce_mobile/features/splash/splash_screen.dart';
 import 'package:ecommerce_mobile/preferences/color.dart';
 import 'package:flutter/material.dart';
@@ -31,23 +32,19 @@ class MyApp extends StatelessWidget {
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
-            side: BorderSide(
-              color: MainColors.primaryColor,
-            ),
+            side: BorderSide(color: MainColors.primaryColor),
             padding: EdgeInsets.symmetric(vertical: 14),
             foregroundColor: MainColors.primaryColor,
             textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
             ),
-          )
+          ),
         ),
         inputDecorationTheme: InputDecorationTheme(
           fillColor: Color(0xffF3F1F1),
           filled: true,
-          hintStyle: TextStyle(
-            color: Color(0xffC2BDBD),
-          ),
+          hintStyle: TextStyle(color: Color(0xffC2BDBD)),
           border: OutlineInputBorder(
             borderSide: BorderSide.none,
             borderRadius: BorderRadius.circular(10),
@@ -59,15 +56,10 @@ class MyApp extends StatelessWidget {
           toolbarHeight: 100,
           surfaceTintColor: MainColors.primaryColor,
           leadingWidth: 150,
-        )
+        ),
       ),
-      
+
       home: SplashScreen(),
     );
   }
 }
-
-
-
-
-

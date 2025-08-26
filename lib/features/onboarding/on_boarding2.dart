@@ -1,6 +1,5 @@
-
-
 import 'package:ecommerce_mobile/features/home/screen/home_screen/home_screen.dart';
+import 'package:ecommerce_mobile/features/home/screen/main_screen/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class SecOnBoarding extends StatefulWidget {
@@ -11,7 +10,6 @@ class SecOnBoarding extends StatefulWidget {
 }
 
 class _SecOnBoardingState extends State<SecOnBoarding> {
-
   final _nameController = TextEditingController();
 
   @override
@@ -25,9 +23,9 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
               decoration: BoxDecoration(
                 color: Color(0xffFFA451),
                 image: DecorationImage(
-                    image: AssetImage('assets/images/onboarding2.png',),
-                    alignment: Alignment(0, 0.6),
-                    scale: 1
+                  image: AssetImage('assets/images/onboarding2.png'),
+                  alignment: Alignment(0, 0.6),
+                  scale: 1,
                 ),
               ),
             ),
@@ -36,39 +34,40 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
             flex: 35,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 50),
-              decoration: BoxDecoration(
-                color: Color(0xffFFFFFF),
-              ),
+              decoration: BoxDecoration(color: Color(0xffFFFFFF)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('What is your firstname?', style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                      ),),
-                      SizedBox(height: 16,),
+                      Text(
+                        'What is your firstname?',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                      SizedBox(height: 16),
                       TextFormField(
                         controller: _nameController,
                         decoration: InputDecoration(
                           hintText: 'Enter your first name',
                         ),
-                      )
+                      ),
                     ],
                   ),
-                  SizedBox(height: 34,),
+                  SizedBox(height: 34),
                   ElevatedButton(
-                    onPressed: (){
+                    onPressed: () {
                       String nameController = _nameController.text;
                       Navigator.pushAndRemoveUntil(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomeScreen(name: nameController,)),
-                          (route) => false,
+                        context,
+                        MaterialPageRoute(builder: (context) => MainScreen()),
+                        (route) => false,
                       );
                     },
-                    child: Text('Let’s Continue',),
+                    child: Text('Let’s Continue'),
                   ),
                 ],
               ),
