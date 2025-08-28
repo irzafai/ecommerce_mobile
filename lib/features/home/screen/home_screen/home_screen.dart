@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 part 'sections/header_section.dart';
 part 'sections/recomanded_combo_section.dart';
 part 'sections/filtered_item_section.dart';
+part 'sections/category_items.dart';
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({super.key, required this.name});
@@ -35,7 +36,10 @@ class HomeScreen extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     decoration: InputDecoration(
-                      hintText: 'Search for fruit salad combos',
+                      hintText: 'What kind of ramen do you like?',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
                       prefixIcon: Icon(
                         AppIcons.search,
                         color: Color(0xffC2BDBD),
@@ -44,7 +48,6 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 22),
-                Icon(AppIcons.filtered),
               ],
             ),
             SizedBox(height: 35),
@@ -57,4 +60,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-

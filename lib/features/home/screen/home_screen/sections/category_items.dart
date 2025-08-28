@@ -1,7 +1,7 @@
 part of '../home_screen.dart';
 
-class RecomandedComboSection extends StatelessWidget {
-  const RecomandedComboSection({super.key});
+class CategoryItems extends StatelessWidget {
+  const CategoryItems({super.key});
 
   @override
   Widget build(BuildContext context) {

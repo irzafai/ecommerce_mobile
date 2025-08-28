@@ -38,7 +38,7 @@ class _CartScreenState extends State<CartScreen> {
             fontWeight: FontWeight.w500,
           ),
         ),
-        backgroundColor: MainColors.primaryColor,
+        backgroundColor: Color(0xff15256E),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 20.0),

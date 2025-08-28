@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.light(),
-        fontFamily: 'Josefin Sans',
+        fontFamily: 'Poppins',
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             padding: EdgeInsets.symmetric(vertical: 14),
-            backgroundColor: Color(0xffFFA451),
+            backgroundColor: Color(0xff15256E),
             foregroundColor: Color(0xffFFFFFF),
             textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
             shape: RoundedRectangleBorder(
@@ -32,9 +32,9 @@ class MyApp extends StatelessWidget {
         ),
         outlinedButtonTheme: OutlinedButtonThemeData(
           style: OutlinedButton.styleFrom(
-            side: BorderSide(color: MainColors.primaryColor),
+            side: BorderSide(color: Color(0xff15256E)),
             padding: EdgeInsets.symmetric(vertical: 14),
-            foregroundColor: MainColors.primaryColor,
+            foregroundColor: Color(0xff15256E),
             textStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10),
@@ -51,10 +51,10 @@ class MyApp extends StatelessWidget {
           ),
         ),
         appBarTheme: AppBarTheme(
-          backgroundColor: MainColors.primaryColor,
+          backgroundColor: Color(0xff15256E),
           centerTitle: true,
           toolbarHeight: 100,
-          surfaceTintColor: MainColors.primaryColor,
+          surfaceTintColor: Color(0xff15256E),
           leadingWidth: 150,
         ),
       ),

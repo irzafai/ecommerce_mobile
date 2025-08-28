@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../onboarding/on_boarding1.dart';
@@ -11,12 +10,14 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 3), (){
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushAndRemoveUntil(
-          context, MaterialPageRoute(builder: (context) => FirstOnBoarding()), (route) => false);
+        context,
+        MaterialPageRoute(builder: (context) => FirstOnBoarding()),
+        (route) => false,
+      );
     });
     super.initState();
   }
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Image.asset('assets/images/splash.png')),
+      body: Center(child: Image.asset('assets/images/ramen_splash.png')),
     );
   }
 }

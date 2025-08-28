@@ -21,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: screens[selectedIndex],
       bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: Color(0xffFFA451),
+        backgroundColor: Color(0xff15256E),
         index: selectedIndex,
         color: Colors.white,
         onTap: (int index) {

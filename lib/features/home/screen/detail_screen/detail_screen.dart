@@ -14,13 +14,13 @@ class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFFA451),
+      backgroundColor: Color(0xff15256E),
       body: SingleChildScrollView(
         child: Column(
           children: [
             Container(
               height: MediaQuery.of(context).size.height * 0.4,
-              decoration: BoxDecoration(color: Color(0xffFFA451)),
+              decoration: BoxDecoration(color: Color(0xff15256E)),
               child: Column(
                 children: [
                   Row(
@@ -103,7 +103,7 @@ class _DetailScreenState extends State<DetailScreen> {
                               borderRadius: BorderRadius.circular(100),
                               color: Color(0xffFFF2E7),
                             ),
-                            child: Icon(Icons.add, color: Color(0xffFFA451)),
+                            child: Icon(Icons.add, color: Color(0xff15256E)),
                           ),
                         ],
                       ),
@@ -132,7 +132,7 @@ class _DetailScreenState extends State<DetailScreen> {
                       Container(
                         height: 2,
                         width: 153,
-                        decoration: BoxDecoration(color: Color(0xffFFA451)),
+                        decoration: BoxDecoration(color: Color(0xff15256E)),
                       ),
                     ],
                   ),
@@ -167,7 +167,7 @@ class _DetailScreenState extends State<DetailScreen> {
                             isFavorite
                                 ? Icons.favorite
                                 : Icons.favorite_border_rounded,
-                            color: Color(0xffFFA451),
+                            color: Color(0xff15256E),
                           ),
                         ),
                       ),

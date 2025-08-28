@@ -15,11 +15,11 @@ class FirstOnBoarding extends StatelessWidget {
             flex: 65,
             child: Container(
               decoration: BoxDecoration(
-                color: MainColors.primaryColor,
+                color: Color(0xff15256E),
                 image: DecorationImage(
-                    image: AssetImage(MainAssets.firstOnBoarding),
-                    alignment: Alignment(0, 0.6),
-                    scale: 1
+                  image: AssetImage(MainAssets.firstOnBoarding),
+                  alignment: Alignment(0, 0.6),
+                  scale: 1,
                 ),
               ),
             ),
@@ -28,27 +28,29 @@ class FirstOnBoarding extends StatelessWidget {
             flex: 35,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 50),
-              decoration: BoxDecoration(
-                color: Color(0xffFFFFFF),
-              ),
+              decoration: BoxDecoration(color: Color(0xffFFFFFF)),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    'Get The Freshest Fruit Salad Combo',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w500,
-                    ),
+                    'Get The most delicious ramen in the world',
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
                   ),
-                  SizedBox(height: 8,),
-                  Text('We deliver the best and freshest fruit\n salad in town. Order for a combo\n today!!!'),
-                  SizedBox(height: 34,),
+                  SizedBox(height: 8),
+                  Text(
+                    'Get a taste of authentic Japanese ramen!\n Hot, hearty, and full of flavor.Order your bowl\n today!',
+                  ),
+                  SizedBox(height: 34),
                   ElevatedButton(
-                      onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => SecOnBoarding()));
-                      },
-                      child: Text('Lets Continue')
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SecOnBoarding(),
+                        ),
+                      );
+                    },
+                    child: Text('Lets Continue'),
                   ),
                 ],
               ),

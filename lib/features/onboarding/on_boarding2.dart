@@ -21,7 +21,7 @@ class _SecOnBoardingState extends State<SecOnBoarding> {
             flex: 65,
             child: Container(
               decoration: BoxDecoration(
-                color: Color(0xffFFA451),
+                color: Color(0xff15256E),
                 image: DecorationImage(
                   image: AssetImage('assets/images/onboarding2.png'),
                   alignment: Alignment(0, 0.6),
